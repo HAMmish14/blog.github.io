@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Subscribe</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	 <link rel="stylesheet"
+          href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet"
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style>
+#last{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    background-color: #7b4ee4;
+    }
+    .full{
+    width: 80%;
+    display: inline-block;
+    margin:2%;
+    margin-left: 10%;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border:15px solid white;
+    border-radius: 5px;
+    margin-bottom: 8%;
+    margin-top: 8%;
+    }
+    .full h3{
+    font-size: 2rem;
+    display:block;
+    margin: 2%;
+    margin-bottom: 0;
+    }
+    .lt{
+    padding: 2%;
+    margin: 2%;
+    }
+    .rt{
+    padding: 2%;
+    margin: 2%;
+    }
+    .lt textarea{
+    width: 94%;
+    margin-left: 2.8%;
+    }
+    button{
+    margin: 2%;
+    }
+    .btn-primary{
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 5%;
+    }
+    .list-item{
+    margin-bottom: 2%;
+    list-style-type: none;
+    }
+    .list-item span{
+    margin-left: 10px;
+    font-size: 1.4rem;
+    }
+    .list-item a{
+    color: white;
+    display: inline-block;
+    }
+    .list-item a:hover{
+    text-decoration: underline;
+    }
+    .form-control{
+    background-color: black;
+    }
+         
+    @media screen and (min-width: 770px){
+    .full{
+        width: 70%;
+        margin-left: 15%;
+    }
+    .lt textarea{
+    width: 95%;
+    margin-left: 2.4%;
+    }
+    }
+         
+    @media screen and (min-width: 1100px){
+    .full{
+        width: 65%;
+        margin-left: 17%;
+        margin-top: 5%;
+    }
+    .lt{
+        width: 55%;
+        display: inline-block;
+        float: left;
+        margin-right: 0;
+    }
+    .rt{
+        width: 35%;
+        display: inline-block;
+        margin-left: 0;
+    }
+    .list-item{
+    margin-bottom: 10%;
+    }
+    .contact-list{
+        margin-top: 22%;
+        padding-right: 8%;
+    }
+    .fa-envelope, .gmail{
+        display: inline-block;
+        width: auto;
+    }
+    }
+ 
+</style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="col-div-6">
+                <p class="logo"><a href="blog.html"><span></span>Techwizer Bois</p>
+            </div>
+            <div class="col-div-6">
+                <ul class="nav">
+                    <li><a href="aboutthebois.html"><button><b>About the Bois</button></li>
+                    <li><a href="blog.html"><button><b>Blog</b></button></li>
+                    <li><a href="latest.html"><button><b>Latest</b></button></li>
+                    <li><a href="subscribe.html"><button><b>SUBSCRIBE</button></a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </header>
+    <section class="banner-section">
+        <div class="container">
+            <div class="col-div-6">
+                <h1 class="headingsubscribe">SUBSCRIPTION<BR>REQUIRED</h1>
+        </div>
+    </section>
+    <section id="last">
+        <!-- heading -->
+        <div class="full">
+            <h3>FILL IN THE DETAILS</h3>
+            <div class="lt">
+                <!-- form starting  -->
+                <form class="form-horizontal" method="post"
+                      action="contact.php">
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <!-- name  -->
+                            <input type="text" class="form-control"
+                                   id="name" placeholder="NAME"
+                                   name="name" value="" />
+                        </div>
+                    </div>
+ 
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <!-- email  -->
+                            <input type="email" class="form-control"
+                                   id="email" placeholder="EMAIL"
+                                   name="email"
+                                value="" />
+                        </div>
+                    </div>
+ 
+                    <!-- message  -->
+                    <textarea class="form-control" rows="10"
+                              placeholder="MESSAGE" name="message">
+            </textarea>
+ 
+                    <button class="btn btn-primary send-button"
+                            id="submit" type="submit" value="SEND">
+                        <i class="fa fa-paper-plane"></i>
+                        <span class="send-text">SEND</span>
+                    </button>
+                </form>
+                <!-- end of form -->
+            </div>
+ 
+            <!-- Contact information -->
+            <div class="rt">
+                    <li class="list-item">
+                        <i class="fa fa-envelope fa-1x">
+                            <span class="contact-text gmail">
+                                <a href="mailto:yourmail@gmail.com"
+                                   title="Send me an email">
+                                    techwizeerbois@gmail.com</a>
+                            </span>
+                        </i>
+                    </li>
+ 
+                    <li class="list-item">
+                        <i class="fa fa-phone fa-1x">
+                            <span class="contact-text phone">
+                                (+91) 6360809503 <br/>
+                            </span>
+                        </i>
+                    </li>
+                    <li class="list-item">
+                        <i class="fa fa-phone fa-1x">
+                            <span class="contact-text phone">
+                                (+91) 6360955503 <br/>
+                            </span>
+                        </i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <br><br>
+<footer>
+	<div class="container">
+		<p>Copyright© 2023 Techwizer Bois</p>
+	</div>
+</footer>
+</body>
+</html>
+ 
